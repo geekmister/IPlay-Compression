@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     preset: 'static',
   },
   app: {
-    baseURL: process.env.GITHUB_REPOSITORY ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/` : '/',
+    // 仅在 GitHub Actions 构建时使用子路径，本地开发保持根路径
+    baseURL: process.env.NUXT_APP_BASE_URL || '/',
     buildAssetsDir: '/_nuxt/',
     head: {
       title: '图像压缩工具 - IPlay',

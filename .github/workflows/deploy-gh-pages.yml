@@ -37,6 +37,9 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Generate static site (SSG)
+        env:
+          # 自动从仓库信息生成正确的子路径 base URL
+          NUXT_APP_BASE_URL: /${{ github.event.repository.name }}/
         run: yarn generate
 
       - name: Setup Pages
