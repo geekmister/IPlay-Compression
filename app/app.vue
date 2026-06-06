@@ -24,7 +24,7 @@
       <section class="mx-auto max-w-4xl">
         <div class="rounded-3xl border-2 border-primary-200/70 p-4 md:p-6">
           <div
-            class="upload-box rounded-3xl border-2 px-6 py-16"
+            class="upload-box cursor-pointer rounded-3xl border-2 px-6 py-16"
             :class="{ dragging: isDragging, 'has-image': !!originalInfo }"
             role="button"
             tabindex="0"
@@ -39,7 +39,7 @@
             <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-white/90 text-4xl text-slate-700 shadow-md">+</div>
             <p class="text-3xl font-semibold text-primary-700 md:text-4xl">上传或拖放您的图像</p>
             <p class="mt-5 text-sm text-brand-muted">大小限制：50 MB · 支持 JPG / PNG / WEBP</p>
-            <p class="mt-2 text-xs text-brand-muted">提示：支持 Ctrl/Cmd + V 粘贴图片</p>
+            <p class="mt-2 text-xs text-brand-muted">提示：支持拖拽、点击上传，电脑端还支持 Ctrl/Cmd + V 粘贴图片</p>
             <input ref="fileInputRef" type="file" accept="image/jpeg,image/png,image/webp" class="hidden" @change="handleFileSelect" />
           </div>
         </div>
@@ -66,43 +66,43 @@
             aria-modal="true"
             aria-label="图像压缩窗口"
           >
-            <header class="flex items-start justify-between border-b border-brand-line px-8 py-5">
+            <header class="flex items-start justify-between border-b border-brand-line px-5 py-3 lg:px-6 lg:py-4">
               <div>
-                <h2 class="text-4xl font-bold">选择图像压缩级别</h2>
-                <p class="mt-1.5 text-base text-brand-muted">调整质量以减小文件大小，实时预览压缩结果。</p>
+                <h2 class="text-xl font-bold lg:text-2xl">选择图像压缩级别</h2>
+                <p class="mt-1 text-xs text-brand-muted lg:text-sm">调整质量以减小文件大小，实时预览压缩结果。</p>
               </div>
-              <button class="text-4xl leading-none text-brand-muted hover:text-primary-600" aria-label="关闭弹窗" @click="closeWorkbench">×</button>
+              <button class="text-2xl leading-none text-brand-muted hover:text-primary-600 lg:text-3xl" aria-label="关闭弹窗" @click="closeWorkbench">×</button>
             </header>
 
-            <div class="grid min-h-0 flex-1 grid-cols-1 gap-0 overflow-hidden lg:grid-cols-[400px_1fr]">
-              <aside class="overflow-y-auto border-b border-brand-line p-8 lg:border-b-0 lg:border-r">
-                <div class="space-y-5 text-base">
+            <div class="grid min-h-0 flex-1 grid-cols-1 gap-0 overflow-hidden lg:grid-cols-[300px_1fr]">
+              <aside class="overflow-y-auto border-b border-brand-line p-4 lg:border-b-0 lg:border-r lg:p-6">
+                <div class="space-y-3 text-xs lg:space-y-4 lg:text-sm">
                   <div>
                     <p class="text-brand-muted">大小</p>
-                    <p class="mt-1 text-2xl font-semibold">
+                    <p class="mt-0.5 text-base font-semibold lg:mt-1 lg:text-lg">
                       {{ formatFileSize(originalInfo?.size || 0) }}
                       <span class="px-1">→</span>
-                      <span class="rounded-lg bg-emerald-100 px-2.5 py-1.5 text-base text-emerald-700">{{ formatFileSize(compressedResult?.size || 0) }}</span>
+                      <span class="rounded-md bg-emerald-100 px-1.5 py-0.5 text-xs text-emerald-700 lg:rounded-lg lg:px-2 lg:py-1 lg:text-sm">{{ formatFileSize(compressedResult?.size || 0) }}</span>
                     </p>
                   </div>
                   <div>
                     <p class="text-brand-muted">分辨率</p>
-                    <p class="mt-1 text-2xl font-semibold">
+                    <p class="mt-0.5 text-base font-semibold lg:mt-1 lg:text-lg">
                       {{ originalInfo?.width || 0 }}×{{ originalInfo?.height || 0 }}
                       <span class="px-1">→</span>
-                      <span class="rounded-lg bg-emerald-100 px-2.5 py-1.5 text-base text-emerald-700">
+                      <span class="rounded-md bg-emerald-100 px-1.5 py-0.5 text-xs text-emerald-700 lg:rounded-lg lg:px-2 lg:py-1 lg:text-sm">
                         {{ compressedResult?.width || 0 }}×{{ compressedResult?.height || 0 }}
                       </span>
                     </p>
                   </div>
                 </div>
 
-                <div class="my-8 border-t border-brand-line"></div>
+                <div class="my-4 border-t border-brand-line lg:my-6"></div>
 
                 <div>
-                  <div class="mb-2.5 flex items-center justify-between">
-                    <label for="qualityRange" class="text-3xl font-semibold">压缩级别</label>
-                    <span class="text-4xl font-bold text-primary-600">{{ Math.round(quality * 100) }}%</span>
+                  <div class="mb-2 flex items-center justify-between">
+                    <label for="qualityRange" class="text-base font-semibold lg:text-lg">压缩级别</label>
+                    <span class="text-xl font-bold text-primary-600 lg:text-2xl">{{ Math.round(quality * 100) }}%</span>
                   </div>
                   <input
                     id="qualityRange"
@@ -118,20 +118,20 @@
                     @input="onQualityInput"
                     @change="onQualityChange"
                   >
-                  <div class="mt-2.5 flex justify-between text-sm text-brand-muted">
+                  <div class="mt-1.5 flex justify-between text-xs text-brand-muted lg:mt-2">
                     <span>更高质量</span>
                     <span>更小文件</span>
                   </div>
-                  <p v-if="compressionRatio > 0 && compressionRatio < 5" class="mt-4 text-sm text-amber-600">该图片可能已高度压缩，效果不明显。</p>
+                  <p v-if="compressionRatio > 0 && compressionRatio < 5" class="mt-2 text-xs text-amber-600 lg:mt-3">该图片可能已高度压缩，效果不明显。</p>
                 </div>
               </aside>
 
-              <section class="flex min-h-0 flex-1 flex-col p-5 md:p-8">
-                <div class="mb-2.5 flex items-center justify-between px-1 text-sm text-brand-muted">
-                  <span class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-slate-400"></span>原始</span>
-                  <span class="flex items-center gap-2"><span class="inline-block h-2.5 w-2.5 rounded-full bg-emerald-400"></span>压缩</span>
+              <section class="flex min-h-0 flex-1 flex-col p-3 lg:p-6">
+                <div class="mb-1.5 flex items-center justify-between px-1 text-xs text-brand-muted lg:mb-2">
+                  <span class="flex items-center gap-1.5"><span class="inline-block h-1.5 w-1.5 rounded-full bg-slate-400 lg:h-2 lg:w-2"></span>原始</span>
+                  <span class="flex items-center gap-1.5"><span class="inline-block h-1.5 w-1.5 rounded-full bg-emerald-400 lg:h-2 lg:w-2"></span>压缩</span>
                 </div>
-                <div class="relative min-h-0 flex-1 overflow-hidden rounded-2xl bg-slate-100">
+                <div class="relative min-h-[180px] flex-1 overflow-hidden rounded-xl bg-slate-100 lg:min-h-0 lg:rounded-2xl">
                   <!-- 压缩后图片（底层，完整显示） -->
                   <img v-if="compressedResult" :src="compressedResult.dataUrl" alt="压缩后预览" class="absolute inset-0 h-full w-full object-contain">
                   <!-- 原图（上层，通过 clip-path 裁剪左侧区域） -->
@@ -177,9 +177,9 @@
               </section>
             </div>
 
-            <footer class="border-t border-brand-line p-5">
+            <footer class="border-t border-brand-line p-3 lg:p-4">
               <button
-                class="btn btn-primary w-full text-xl"
+                class="btn btn-primary w-full text-sm lg:text-base"
                 :disabled="!compressedResult || isCompressing"
                 :class="{ 'animate-pulse-once': !hasDownloaded && !!compressedResult && !isCompressing, 'opacity-60 cursor-not-allowed': isCompressing }"
                 @click="downloadImage"
@@ -488,11 +488,5 @@ onBeforeUnmount(() => {
   opacity: 0;
 }
 
-@media (max-width: 1023px) {
-  .modal-panel {
-    max-height: 100vh;
-    height: 100vh;
-    border-radius: 0;
-  }
-}
+
 </style>
