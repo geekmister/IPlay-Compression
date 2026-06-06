@@ -1,10 +1,4 @@
 <p align="center">
-	<a href="README.md">
-		<img src="https://img.shields.io/badge/English-🇺🇸-111827.svg?style=for-the-badge" alt="English Version" />
-	</a>
-</p>
-
-<p align="center">
 	<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:4f46e5,50:0ea5e9,100:14b8a6&text=IPlay%20压缩工具&fontColor=ffffff&fontSize=64&desc=本地运行%20图像压缩工具箱&descAlignY=70&animation=fadeIn" alt="IPlay Compression Banner" />
 </p>
 
@@ -22,6 +16,12 @@
 	<a href="https://github.com/Geekmister/IPlay/commits"><img src="https://img.shields.io/github/last-commit/Geekmister/IPlay?style=flat-square&label=最后提交&color=22c55e" alt="Last Commit" /></a>
 	<img src="https://visitor-badge.laobi.icu/badge?page_id=Geekmister.IPlay" alt="访问量" />
 	<a href="https://github.com/Geekmister/IPlay/releases"><img src="https://img.shields.io/github/downloads/Geekmister/IPlay/total?style=flat-square&label=下载量&color=8b5cf6" alt="Downloads" /></a>
+</p>
+
+<p align="center">
+	<a href="README.md">
+		<img src="https://img.shields.io/badge/English-🇺🇸-111827.svg?style=for-the-badge" alt="English Version" />
+	</a>
 </p>
 
 <p align="center">
