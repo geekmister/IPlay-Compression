@@ -26,6 +26,8 @@
 
 ![Page preview](page-preview.png)
 
+> The human in the picture is mine.
+
 ## Core Features
 
 | Emoji | Feature | Description |
@@ -39,39 +41,31 @@
 | 💾 | One-click Download | Export compressed image directly to local, no server waiting required |
 | 🎛️ | Dark Console Style | Developer-oriented toolbench UI, comfortable for long time usage |
 
----
+## Quick Start
 
-## 快速开始
+1. Enviroment Requirements
+    - Node.js >= 18.x
+    - Nuxt 3 Runtime Environment
+2. Instasll Dependencies
+    ```bash
+    yarn install
+    ```
+3. Launch development server
+    ```bash
+    yarn dev
+    ```
+4. Vist [Lcoal address](http://localhost:3000) to use
+5. Production build
+    ```bash
+    yarn build
+    ```
+6. Preview production build
+    ```bash
+    yarn preview
+    ```
 
-### 环境要求
-- Node.js >= 18.x
-- Nuxt 3 运行时
-
-### 安装依赖
-```bash
-yarn install
-```
-
-### 启动开发服务器
-```bash
-yarn dev
-```
-访问 http://localhost:3000 即可开始使用。
-
-### 生产构建
-```bash
-yarn build
-```
-
-### 预览生产构建
-```bash
-yarn preview
-```
-
----
-
-## 项目结构
-```
+## Project Structure
+```markdown
 IPlay-Compression/
 ├── app/
 │   ├── app.vue
@@ -84,18 +78,27 @@ IPlay-Compression/
 └── README.md
 ```
 
----
-
-## 隐私承诺
-
-本项目严格遵循 Local-First 设计原则：
-- 永远不会将您的图片上传到任何远程服务器
-- 不会在本地持久化存储您的任何上传文件
-- 所有处理逻辑完全开源可审计
-- 所有计算完全在浏览器沙箱内执行
-
----
-
 ## License
 
-MIT © IPlay Team
+MIT License
+
+Copyright (c) 2026 IPlay Team
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
