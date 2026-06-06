@@ -1,31 +1,43 @@
-# IPlay Compression
+<p align="center">
+	<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:4f46e5,50:0ea5e9,100:14b8a6&text=IPlay Compression&fontColor=ffffff&fontSize=64&desc=Local Run%20Image%20Compression&descAlignY=70&animation=fadeIn" alt="IPlay Compression Banner" />
+</p>
 
-![IPlay Banner](https://picsum.photos/id/1/1200/300)
+<p align="center">
+	<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-111827.svg?style=for-the-badge" alt="MIT" /></a>
+	<img src="https://img.shields.io/badge/Runtime-Browser%20Only-0f766e.svg?style=for-the-badge" alt="Browser Only" />
+	<img src="https://img.shields.io/badge/Privacy-Local%20Processing-1d4ed8.svg?style=for-the-badge" alt="Local Processing" />
+	<img src="https://img.shields.io/badge/Tested%20With-Playwright-7c3aed.svg?style=for-the-badge" alt="Playwright" />
+</p>
 
-> Local-First Image Compression Lab
+<p align="center">
+	<a href="https://github.com/Geekmister/IPlay/stargazers"><img src="https://img.shields.io/github/stars/Geekmister/IPlay?style=flat-square&label=Stars&color=f59e0b" alt="GitHub Stars" /></a>
+	<a href="https://github.com/Geekmister/IPlay/network/members"><img src="https://img.shields.io/github/forks/Geekmister/IPlay?style=flat-square&label=Forks&color=0ea5e9" alt="GitHub Forks" /></a>
+	<a href="https://github.com/Geekmister/IPlay/issues"><img src="https://img.shields.io/github/issues/Geekmister/IPlay?style=flat-square&label=Issues&color=ef4444" alt="GitHub Issues" /></a>
+	<a href="https://github.com/Geekmister/IPlay/commits"><img src="https://img.shields.io/github/last-commit/Geekmister/IPlay?style=flat-square&label=Last%20Commit&color=22c55e" alt="Last Commit" /></a>
+	<img src="https://visitor-badge.laobi.icu/badge?page_id=Geekmister.IPlay" alt="Visitors" />
+	<a href="https://github.com/Geekmister/IPlay/releases"><img src="https://img.shields.io/github/downloads/Geekmister/IPlay/total?style=flat-square&label=Downloads&color=8b5cf6" alt="Downloads" /></a>
+</p>
 
-一个纯前端、本地运行的图像压缩工具箱。
-不上传图片，不依赖后端，把高频图像压缩任务做成可快速上手的任务入口。
+<p align="center">
+	A pure front-end, locally-running image compression toolbox.No image uploads, no reliance on the backend. It turns the compression tasks of frequently used images into an easily accessible entry point for quick operation.
+</p>
 
 ---
 
+![Page preview](page-preview.png)
+
 ## 核心特性
 
-| 标签 | 说明 |
-|---|---|
-| LICENSE | MIT |
-| RUNTIME | BROWSER ONLY |
-| PRIVACY | 100% LOCAL PROCESSING |
-| TESTED WITH | PLAYWRIGHT |
-
-- 零后端依赖 - 所有图像处理完全在浏览器本地内存中完成，图片永远不会离开您的设备
-- 拖拽上传 - 支持拖拽、粘贴截图、点击选择三种上传方式
-- 实时预览 - 左右分栏对比滑块，一键拖动查看压缩前后差异
-- 质量调节 - 可视化滑块实时调整压缩质量，即时预览效果
-- 多格式支持 - 原生支持 JPG / PNG / WEBP 三种主流图像格式
-- 大文件支持 - 单文件最大支持 50MB 超大图像
-- 一键下载 - 压缩完成后直接导出到本地，无需等待服务器处理
-- 深色控制台风格 - 专为开发者设计的工具台界面，长时间使用不疲劳
+| Emoji | 特性 | 说明 |
+|---|---|---|
+| 🔒 | 零后端依赖 | 所有图像处理完全在浏览器本地内存中完成，图片永远不会离开您的设备 |
+| 📤 | 拖拽上传 | 支持拖拽、粘贴截图、点击选择三种上传方式 |
+| 👀 | 实时预览 | 左右分栏对比滑块，一键拖动查看压缩前后差异 |
+| 🎚️ | 质量调节 | 可视化滑块实时调整压缩质量，即时预览效果 |
+| 📷 | 多格式支持 | 原生支持 JPG / PNG / WEBP 三种主流图像格式 |
+| 📦 | 大文件支持 | 单文件最大支持 50MB 超大图像 |
+| 💾 | 一键下载 | 压缩完成后直接导出到本地，无需等待服务器处理 |
+| 🎛️ | 深色控制台风格 | 专为开发者设计的工具台界面，长时间使用不疲劳 |
 
 ---
 
