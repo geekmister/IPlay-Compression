@@ -1,5 +1,9 @@
-<p align="center">
-	<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:4f46e5,50:0ea5e9,100:14b8a6&text=IPlay Compression&fontColor=ffffff&fontSize=64&desc=Local Run%20Image%20Compression&descAlignY=70&animation=fadeIn" alt="IPlay Compression Banner" />
+<p align="center">	<a href="README.zh-CN.md">
+		<img src="https://img.shields.io/badge/中文-🇨🇳-111827.svg?style=for-the-badge" alt="中文版本" />
+	</a>
+</p>
+
+<p align="center">	<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:4f46e5,50:0ea5e9,100:14b8a6&text=IPlay Compression&fontColor=ffffff&fontSize=64&desc=Local Run%20Image%20Compression&descAlignY=70&animation=fadeIn" alt="IPlay Compression Banner" />
 </p>
 
 <p align="center">
@@ -78,27 +82,56 @@ IPlay-Compression/
 └── README.md
 ```
 
+## Contributing
+
+We welcome all kinds of contributions! Please follow these guidelines to make your contribution smooth:
+
+### 🐛 Report Issues
+- Before submitting a new issue, please search to avoid duplicates
+- Clearly describe the problem, reproduction steps and expected behavior
+- Attach screenshots and environment information if possible
+
+### 🚀 Submit Pull Requests
+1. Fork this repository and create a new branch from `develop`
+2. Follow Conventional Commits specification for your commit messages
+3. Make sure your code passes all lint checks and tests
+4. Update relevant documentation if you change features
+5. Submit PR to the `develop` branch, not `main`
+
+### 🎨 Code Style
+- Use Vue 3 Composition API with `<script setup>` syntax
+- Follow ESLint and Prettier rules included in the project
+- Keep components small and focused on single responsibility
+- Write meaningful variable and function names in English
+
+### 📝 Commit Convention
+We strictly follow [Conventional Commits](https://www.conventionalcommits.org/):
+- `feat`: New feature
+- `fix`: Bug fix
+- `docs`: Documentation changes
+- `style`: Formatting changes
+- `refactor`: Code refactoring
+- `perf`: Performance improvement
+- `test`: Test related changes
+- `chore`: Build/tooling/maintenance changes
+
+## Real-time trend dashboard
+
+<p align="center">
+	<a href="https://star-history.com/#Geekmister/IPlay&Date">
+		<img alt="Star History Chart" width="100%" src="https://api.star-history.com/svg?repos=Geekmister/IPlay&type=Date" />
+	</a>
+</p>
+
+<p align="center">
+	<img alt="Commit Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Geekmister&bg_color=ffffff&color=1f2937&line=4f46e5&point=06b6d4&area=true&hide_border=true" />
+</p>
+
+<p align="center">
+	<a href="https://github.com/Geekmister/IPlay/graphs/contributors"><img src="https://contrib.rocks/image?repo=Geekmister/IPlay" alt="Contributors" /></a>
+</p>
+
 ## License
 
-MIT License
-
-Copyright (c) 2026 IPlay Team
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+[MIT License](LICENSE)
 
