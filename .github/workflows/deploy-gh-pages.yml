@@ -1,0 +1,63 @@
+name: Deploy to GitHub Pages
+
+on:
+  # 当 PR 合并到 main 分支时触发部署
+  push:
+    branches:
+      - main
+  # 允许从 Actions 页面手动触发部署
+  workflow_dispatch:
+
+# 权限配置，确保部署到 GitHub Pages 有足够权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 并发控制，避免多个部署任务冲突
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build Nuxt 3 SSG Site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Generate static site (SSG)
+        env:
+          # 自动从仓库信息生成正确的子路径 base URL
+          NUXT_APP_BASE_URL: /${{ github.event.repository.name }}/
+        run: yarn generate
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './.output/public'
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
