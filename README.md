@@ -26,18 +26,18 @@
 
 ![Page preview](page-preview.png)
 
-## 核心特性
+## Core Features
 
-| Emoji | 特性 | 说明 |
+| Emoji | Feature | Description |
 |---|---|---|
-| 🔒 | 零后端依赖 | 所有图像处理完全在浏览器本地内存中完成，图片永远不会离开您的设备 |
-| 📤 | 拖拽上传 | 支持拖拽、粘贴截图、点击选择三种上传方式 |
-| 👀 | 实时预览 | 左右分栏对比滑块，一键拖动查看压缩前后差异 |
-| 🎚️ | 质量调节 | 可视化滑块实时调整压缩质量，即时预览效果 |
-| 📷 | 多格式支持 | 原生支持 JPG / PNG / WEBP 三种主流图像格式 |
-| 📦 | 大文件支持 | 单文件最大支持 50MB 超大图像 |
-| 💾 | 一键下载 | 压缩完成后直接导出到本地，无需等待服务器处理 |
-| 🎛️ | 深色控制台风格 | 专为开发者设计的工具台界面，长时间使用不疲劳 |
+| 🔒 | Zero Backend Dependency | All image processing runs 100% locally in browser memory, your images never leave your device |
+| 📤 | Drag & Drop Upload | Support 3 upload methods: drag & drop, paste screenshot, click to select |
+| 👀 | Real-time Preview | Side-by-side comparison slider, drag to view before/after compression difference instantly |
+| 🎚️ | Quality Adjustment | Visual slider to adjust compression quality with immediate preview |
+| 📷 | Multi-format Support | Native support for JPG / PNG / WEBP 3 mainstream image formats |
+| 📦 | Large File Support | Single file up to 50MB ultra-large image |
+| 💾 | One-click Download | Export compressed image directly to local, no server waiting required |
+| 🎛️ | Dark Console Style | Developer-oriented toolbench UI, comfortable for long time usage |
 
 ---
 
