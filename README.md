@@ -10,12 +10,23 @@
 </p>
 
 <p align="center">
-	<a href="https://github.com/Geekmister/IPlay/stargazers"><img src="https://img.shields.io/github/stars/Geekmister/IPlay?style=flat-square&label=Stars&color=f59e0b" alt="GitHub Stars" /></a>
-	<a href="https://github.com/Geekmister/IPlay/network/members"><img src="https://img.shields.io/github/forks/Geekmister/IPlay?style=flat-square&label=Forks&color=0ea5e9" alt="GitHub Forks" /></a>
-	<a href="https://github.com/Geekmister/IPlay/issues"><img src="https://img.shields.io/github/issues/Geekmister/IPlay?style=flat-square&label=Issues&color=ef4444" alt="GitHub Issues" /></a>
-	<a href="https://github.com/Geekmister/IPlay/commits"><img src="https://img.shields.io/github/last-commit/Geekmister/IPlay?style=flat-square&label=Last%20Commit&color=22c55e" alt="Last Commit" /></a>
-	<img src="https://visitor-badge.laobi.icu/badge?page_id=Geekmister.IPlay" alt="Visitors" />
-	<a href="https://github.com/Geekmister/IPlay/releases"><img src="https://img.shields.io/github/downloads/Geekmister/IPlay/total?style=flat-square&label=Downloads&color=8b5cf6" alt="Downloads" /></a>
+	<a href="https://github.com/Geekmister/
+IPlay-Compression/stargazers"><img src="https://img.shields.io/github/stars/Geekmister/
+IPlay-Compression?style=flat-square&label=Stars&color=f59e0b" alt="GitHub Stars" /></a>
+	<a href="https://github.com/Geekmister/
+IPlay-Compression/network/members"><img src="https://img.shields.io/github/forks/Geekmister/
+IPlay-Compression?style=flat-square&label=Forks&color=0ea5e9" alt="GitHub Forks" /></a>
+	<a href="https://github.com/Geekmister/
+IPlay-Compression/issues"><img src="https://img.shields.io/github/issues/Geekmister/
+IPlay-Compression?style=flat-square&label=Issues&color=ef4444" alt="GitHub Issues" /></a>
+	<a href="https://github.com/Geekmister/
+IPlay-Compression/commits"><img src="https://img.shields.io/github/last-commit/Geekmister/
+IPlay-Compression?style=flat-square&label=Last%20Commit&color=22c55e" alt="Last Commit" /></a>
+	<img src="https://visitor-badge.laobi.icu/badge?page_id=Geekmister.
+IPlay-Compression" alt="Visitors" />
+	<a href="https://github.com/Geekmister/
+IPlay-Compression/releases"><img src="https://img.shields.io/github/downloads/Geekmister/
+IPlay-Compression/total?style=flat-square&label=Downloads&color=8b5cf6" alt="Downloads" /></a>
 </p>
 
 <p align="center">	<a href="README.zh-CN.md">
