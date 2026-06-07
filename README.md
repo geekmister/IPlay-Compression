@@ -1,4 +1,5 @@
-<p align="center">	<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:4f46e5,50:0ea5e9,100:14b8a6&text=IPlay Compression&fontColor=ffffff&fontSize=64&desc=Local Run%20Image%20Compression&descAlignY=70&animation=fadeIn" alt="IPlay Compression Banner" />
+<p align="center">
+	<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=0:4f46e5,50:0ea5e9,100:14b8a6&text=IPlay Compression&fontColor=ffffff&fontSize=64&desc=Local Run%20Image%20Compression&descAlignY=70&animation=fadeIn" alt="IPlay Compression Banner" />
 </p>
 
 <p align="center">
