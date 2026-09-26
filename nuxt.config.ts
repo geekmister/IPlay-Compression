@@ -16,22 +16,39 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/main.css'],
 
-  // GitHub Pages SSG 部署配置
-  ssr: false,
-  nitro: {
-    preset: 'static',
-  },
   app: {
     // 仅在 GitHub Actions 构建时使用子路径，本地开发保持根路径
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
-    buildAssetsDir: '/_nuxt/',
     head: {
-      title: '图像压缩工具 - IPlay',
+      htmlAttrs: { lang: 'zh-CN' },
+      title: '在线图像压缩工具 - IPlay',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1, viewport-fit=cover' },
-        { name: 'description', content: '减小文件体积，更快地分享图像，且不损失画质。所有处理在本地完成，图片不上传。' },
-        { name: 'theme-color', content: '#0f172a' }
+        {
+          name: 'description',
+          content: 'IPlay 在线图像压缩工具：在浏览器本地压缩 JPG / PNG / WebP 图片，减小文件体积、不损失画质，图片不上传。'
+        },
+        { name: 'keywords', content: '图像压缩, 图片压缩, 在线压缩, JPG压缩, PNG压缩, WebP压缩, IPlay' },
+        { name: 'robots', content: 'index, follow' },
+        { name: 'author', content: 'Geekmister' },
+        { name: 'theme-color', content: '#0f172a' },
+        // Open Graph
+        { property: 'og:type', content: 'website' },
+        { property: 'og:site_name', content: 'IPlay 图像压缩' },
+        { property: 'og:title', content: '在线图像压缩工具 - IPlay' },
+        {
+          property: 'og:description',
+          content: '在浏览器本地压缩 JPG / PNG / WebP 图片，减小文件体积、不损失画质，图片不上传。'
+        },
+        { property: 'og:locale', content: 'zh_CN' },
+        // Twitter Card
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:title', content: '在线图像压缩工具 - IPlay' },
+        {
+          name: 'twitter:description',
+          content: '在浏览器本地压缩 JPG / PNG / WebP 图片，减小文件体积、不损失画质，图片不上传。'
+        }
       ],
       link: [
         { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }

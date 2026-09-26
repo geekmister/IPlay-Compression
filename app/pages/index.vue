@@ -2,6 +2,28 @@
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import type { CompressionResult, OriginalInfo } from '~/composables/useImageCompressor'
 
+// SEO：结构化数据（JSON-LD），帮助搜索引擎理解本工具
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebApplication',
+        name: 'IPlay 图像压缩',
+        applicationCategory: 'UtilitiesApplication',
+        operatingSystem: 'Web',
+        description: '在浏览器本地压缩 JPG / PNG / WebP 图片，减小文件体积、不损失画质，图片不上传。',
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD'
+        }
+      })
+    }
+  ]
+})
+
 type WorkflowState = 'idle' | 'file-selected' | 'compressing' | 'ready' | 'error'
 
 const { validateFile, loadOriginalInfo, compress, revokeUrl } = useImageCompressor()
