@@ -2,7 +2,7 @@
   <nav class="sticky top-0 z-40 border-b border-brand-line/70 bg-white/85 px-4 py-3 backdrop-blur-md">
     <div class="mx-auto flex w-full max-w-6xl items-center justify-between">
       <div class="flex items-center gap-2 text-lg font-bold text-primary-600">
-        <span>✦</span>
+        <AppIcon name="sparkles" class="h-5 w-5" />
         <span>IPlay</span>
         <span class="text-brand-muted">图像压缩</span>
       </div>

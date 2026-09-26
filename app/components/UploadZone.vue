@@ -51,7 +51,9 @@ function onDrop(event: DragEvent) {
       @dragleave.prevent="onDragLeave"
       @drop.prevent="onDrop"
     >
-      <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-white/90 text-4xl text-slate-700 shadow-md">+</div>
+      <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-white/90 text-slate-700 shadow-md">
+        <AppIcon name="upload" class="h-9 w-9" />
+      </div>
       <p class="text-3xl font-semibold text-primary-700 md:text-4xl">上传或拖放您的图像</p>
       <p class="mt-5 text-sm text-brand-muted">大小限制：50 MB · 支持 JPG / PNG / WEBP</p>
       <p class="mt-2 text-xs text-brand-muted">提示：支持拖拽、点击上传，电脑端还支持 Ctrl/Cmd + V 粘贴图片</p>

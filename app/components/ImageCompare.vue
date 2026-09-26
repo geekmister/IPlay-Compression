@@ -95,7 +95,7 @@ onBeforeUnmount(() => {
         @keydown.left.prevent="nudgeSplitter(-2)"
         @keydown.right.prevent="nudgeSplitter(2)"
       >
-        <span class="splitter-icon">↔</span>
+        <AppIcon name="compare" class="splitter-icon h-[18px] w-[18px]" />
       </div>
 
       <Transition name="compressing-overlay">

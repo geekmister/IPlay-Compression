@@ -45,7 +45,7 @@ function onChange(event: Event) {
         <p class="text-brand-muted">大小</p>
         <p class="mt-0.5 text-base font-semibold lg:mt-1 lg:text-lg">
           {{ formatFileSize(originalInfo?.size || 0) }}
-          <span class="px-1">→</span>
+          <AppIcon name="arrow-right" class="mx-1 inline h-4 w-4 align-middle text-brand-muted" />
           <span class="rounded-md bg-emerald-100 px-1.5 py-0.5 text-xs text-emerald-700 lg:rounded-lg lg:px-2 lg:py-1 lg:text-sm">{{ formatFileSize(compressedResult?.size || 0) }}</span>
         </p>
       </div>
@@ -53,7 +53,7 @@ function onChange(event: Event) {
         <p class="text-brand-muted">分辨率</p>
         <p class="mt-0.5 text-base font-semibold lg:mt-1 lg:text-lg">
           {{ originalInfo?.width || 0 }}×{{ originalInfo?.height || 0 }}
-          <span class="px-1">→</span>
+          <AppIcon name="arrow-right" class="mx-1 inline h-4 w-4 align-middle text-brand-muted" />
           <span class="rounded-md bg-emerald-100 px-1.5 py-0.5 text-xs text-emerald-700 lg:rounded-lg lg:px-2 lg:py-1 lg:text-sm">
             {{ compressedResult?.width || 0 }}×{{ compressedResult?.height || 0 }}
           </span>

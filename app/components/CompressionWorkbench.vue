@@ -29,7 +29,7 @@ const emit = defineEmits<{
               <h2 class="text-xl font-bold lg:text-2xl">选择图像压缩级别</h2>
               <p class="mt-1 text-xs text-brand-muted lg:text-sm">调整质量以减小文件大小，实时预览压缩结果。</p>
             </div>
-            <button class="text-2xl leading-none text-brand-muted hover:text-primary-600 lg:text-3xl" aria-label="关闭弹窗" @click="emit('close')">×</button>
+            <button class="text-2xl leading-none text-brand-muted hover:text-primary-600 lg:text-3xl" aria-label="关闭弹窗" @click="emit('close')"><AppIcon name="close" class="h-6 w-6 lg:h-7 lg:w-7" /></button>
           </header>
 
           <div class="grid min-h-0 flex-1 grid-cols-1 gap-0 overflow-hidden lg:grid-cols-[300px_1fr]">
@@ -56,9 +56,7 @@ const emit = defineEmits<{
               @click="emit('download')"
             >
               <span v-if="isCompressing" class="mr-2 inline-block h-4 w-4 animate-spin rounded-full border-2 border-white/30 border-t-white"></span>
-              <svg v-else-if="compressedResult && !isCompressing" class="mr-2 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M7.5 12l4.5 4.5m0 0l4.5-4.5m-4.5 4.5V3" />
-              </svg>
+              <AppIcon v-else-if="compressedResult && !isCompressing" name="download" class="mr-2 h-4 w-4" />
               {{ isCompressing ? '压缩中…' : '应用并下载' }}
             </button>
           </footer>

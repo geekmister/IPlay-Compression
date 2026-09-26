@@ -1,12 +1,96 @@
+/* ============================================================
+   视觉 Token（单一事实来源）
+   来源：对标网站 IPlay 逆向分析，见 docs/visual-token.md
+   ============================================================ */
 :root {
-  --bg: #f8fafc;
-  --card: #ffffff;
-  --text: #0f172a;
-  --muted: #475569;
-  --line: #e2e8f0;
-  --brand: #6366f1;
-  --pill-bg: #ffffff;
-  --pill-border: #cbd5e1;
+  /* ---- 品牌色 Brand (Indigo) ---- */
+  --color-primary: #6366f1;
+  --color-primary-50: #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+
+  /* ---- 中性色 Neutral (gray 系) ---- */
+  --color-bg: #f9fafb;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f3f4f6;
+  --color-text-strong: #111827;
+  --color-text: #1f2937;
+  --color-text-muted: #6b7280;
+  --color-text-disabled: #9ca3af;
+  --color-border: #e5e7eb;
+  --color-border-strong: #d1d5db;
+
+  /* ---- 语义色 Semantic ---- */
+  --color-info: #3b82f6;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-vip: #ec4899;
+
+  /* ---- 渐变 Gradient ---- */
+  --gradient-primary: linear-gradient(135deg, #6366f1, #8b5cf6);
+  --gradient-primary-deep: linear-gradient(135deg, #4f46e5, #7c3aed);
+  --gradient-vip: linear-gradient(135deg, #f59e0b, #ef4444, #ec4899);
+  --gradient-hero: linear-gradient(135deg, #4f46e5 0%, #0f766e 45%, #ea580c 100%);
+
+  /* ---- 圆角 Radius（对齐 Tailwind 语义） ---- */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+  --radius-icon: 0.85rem;
+
+  /* ---- 阴影 Shadow ---- */
+  --shadow-card: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-card-soft: 0 8px 24px rgba(15, 23, 42, 0.05);
+  --shadow-card-hover: 0 12px 28px rgba(79, 70, 229, 0.12);
+  --shadow-tool-active: 0 8px 20px rgba(99, 102, 241, 0.28);
+  --shadow-popup: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  --shadow-vip: 0 10px 15px -3px rgba(236, 72, 153, 0.2), 0 4px 6px -4px rgba(236, 72, 153, 0.2);
+
+  /* ---- 字体 Typography ---- */
+  --font-sans: system-ui, -apple-system, 'PingFang SC', 'Noto Sans SC', 'Source Han Sans SC', sans-serif;
+
+  /* ---- 布局 Layout ---- */
+  --container-max: 72rem;
+
+  /* ---- 动效 Motion ---- */
+  --ease-gentle: cubic-bezier(0.2, 0, 0, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+
+  /* ---- 兼容别名（旧变量，保证现有组件不断链） ---- */
+  --bg: var(--color-bg);
+  --card: var(--color-surface);
+  --text: var(--color-text);
+  --muted: var(--color-text-muted);
+  --line: var(--color-border);
+  --brand: var(--color-primary);
+  --pill-bg: var(--color-surface);
+  --pill-border: var(--color-border-strong);
+}
+
+/* 暗色主题（对标站 darkMode: 'class' 策略） */
+.dark {
+  --color-bg: #111827;
+  --color-surface: #1f2937;
+  --color-surface-muted: #1f2937;
+  --color-text-strong: #f9fafb;
+  --color-text: #e5e7eb;
+  --color-text-muted: #9ca3af;
+  --color-text-disabled: #6b7280;
+  --color-border: #374151;
+  --color-border-strong: #4b5563;
 }
 
 * {
