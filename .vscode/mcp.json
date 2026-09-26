@@ -1,0 +1,16 @@
+{
+  "servers": {
+    "iplay-compression": {
+      "type": "http",
+      "url": "http://localhost:3000/mcp"
+    },
+    "nuxt-dev": {
+      "type": "sse",
+      "url": "http://localhost:3000/__mcp/sse"
+    },
+    "nuxt-docs": {
+      "type": "http",
+      "url": "https://nuxt.com/mcp"
+    }
+  }
+}

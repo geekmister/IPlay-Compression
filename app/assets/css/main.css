@@ -291,3 +291,26 @@ input[type='range']::-moz-range-thumb:hover {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Toast 过渡 */
+.toast-enter-active,
+.toast-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.toast-enter-from,
+.toast-leave-to {
+  opacity: 0;
+  transform: translate(-50%, -8px);
+}
+
+/* 压缩中遮罩过渡 */
+.compressing-overlay-enter-active,
+.compressing-overlay-leave-active {
+  transition: opacity 0.15s ease;
+}
+
+.compressing-overlay-enter-from,
+.compressing-overlay-leave-to {
+  opacity: 0;
+}

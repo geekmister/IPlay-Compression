@@ -2,7 +2,18 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/mcp-toolkit', 'nuxt-mcp-dev'],
+
+  // MCP 配置：@nuxtjs/mcp-toolkit 与 nuxt-mcp-dev 共用 configKey 'mcp'，字段互不冲突
+  mcp: {
+    // @nuxtjs/mcp-toolkit（为应用暴露 MCP Server）
+    name: 'IPlay-Compression MCP',
+    route: '/mcp',
+    dir: 'mcp',
+    // nuxt-mcp-dev（开发期辅助理解项目结构，关闭自动写配置，由本仓库手动维护 .vscode/mcp.json）
+    updateConfig: false,
+    includeNuxtDocsMcp: true,
+  },
   css: ['~/assets/css/main.css'],
 
   // GitHub Pages SSG 部署配置

@@ -25,3 +25,5 @@ logs
 
 # Custom
 deploy.sh
+docs/迭代/*
+docs/开发手册.md
