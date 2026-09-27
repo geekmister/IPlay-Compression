@@ -63,23 +63,23 @@
 
 ### 安装依赖
 ```bash
-yarn install
+npm install
 ```
 
 ### 启动开发服务器
 ```bash
-yarn dev
+npm run dev
 ```
 访问 [本地地址](http://localhost:3000) 即可开始使用。
 
 ### 生产构建
 ```bash
-yarn build
+npm run build
 ```
 
 ### 预览生产构建
 ```bash
-yarn preview
+npm run preview
 ```
 
 ## 项目结构
