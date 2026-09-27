@@ -14,6 +14,23 @@ export default defineNuxtConfig({
     updateConfig: false,
     includeNuxtDocsMcp: true,
   },
+  // 运行时公共配置：前端埋点（51LA 网站统计 V6）
+  // 均可用环境变量覆盖，例如 NUXT_PUBLIC_LA51_ID='' 可关闭统计、NUXT_PUBLIC_LA51_DEBUG=true 可在本地联调
+  runtimeConfig: {
+    public: {
+      la51: {
+        id: '3RK04ZJ3jNB7dNlx',
+        ck: '3RK04ZJ3jNB7dNlx',
+        // 当前只做网页流量统计：关闭自动埋点（不注入事件脚本，不做元素级采集）
+        // 后续要做事件埋点时改为 true，并先在 51LA 后台开通「事件分析」
+        autoTrack: false,
+        // 单页应用路由模式（Vue/React 等 SPA 场景建议开启）
+        hashMode: true,
+        // 本地开发是否上报，默认 false
+        debug: false
+      }
+    }
+  },
   css: ['~/assets/css/main.css'],
 
   app: {
