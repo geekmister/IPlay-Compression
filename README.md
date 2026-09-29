@@ -64,20 +64,20 @@
     - Nuxt 3 Runtime Environment
 2. Instasll Dependencies
     ```bash
-    yarn install
+    npm install
     ```
 3. Launch development server
     ```bash
-    yarn dev
+    npm run dev
     ```
 4. Vist [Lcoal address](http://localhost:3000) to use
 5. Production build
     ```bash
-    yarn build
+    npm run build
     ```
 6. Preview production build
     ```bash
-    yarn preview
+    npm run preview
     ```
 
 ## Project Structure
