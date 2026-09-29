@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 // 视觉 Token 桥接层：将 Tailwind 类映射到 main.css 的 CSS 变量（单一事实来源）
-// 真值定义见 app/assets/css/main.css 的 :root，规范见 docs/visual-token.md
+// 真值定义见 app/assets/css/main.css 的 :root，规范见 docs/视觉设计.md
 export default <Partial<Config>>{
   theme: {
     extend: {
