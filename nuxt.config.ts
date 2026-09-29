@@ -27,7 +27,7 @@ export default defineNuxtConfig({
         // 单页应用路由模式（Vue/React 等 SPA 场景建议开启）
         hashMode: true,
         // 本地开发是否上报，默认 false
-        debug: false
+        debug: true
       }
     }
   },
